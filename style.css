@@ -1,35 +1,97 @@
-.tree1{
-	border-radius: 15%;
-	float:left;
+.image1{
+	border-top:thick solid;/*adds a thick solid border for top part of the image*/
+	border-left:thick solid;/*adds a thick solid border for left part of the image*/
+	border-right:thick solid;/*adds a thick solid border for right part of the image*/
+	border-bottom:thick solid ;/*adds a thick solid border for bottom part of the image*/
+	border-color:black;/*changes the colour of the border colour*/
 	
 }
-.tree2{
-	border-radius:15%;
+.image2{
+	border-top:thick solid;/*adds a thick solid border for top part of the image*/
+	border-left:thick solid;/*adds a thick solid border for left part of the image*/
+	border-right:thick solid;/*adds a thick solid border for right part of the image*/
+	border-bottom:thick solid ;/*adds a thick solid border for bottom part of the image*/
+	border-color:black;/*changes the colour of the border colour*/
+}.image3{
+	border-top:thick solid;/*adds a thick solid border for top part of the image*/
+	border-left:thick solid;/*adds a thick solid border for left part of the image*/
+	border-right:thick solid;/*adds a thick solid border for right part of the image*/
+	border-bottom:thick solid ;/*adds a thick solid border for bottom part of the image*/
+	border-color:black;/*changes the colour of the border colour*/
+
+}.image4{
+	border-top:thick solid ;/*adds a thick solid border for top part of the image*/
+	border-left:thick solid;/*adds a thick solid border for left part of the image*/
+	border-right:thick solid;/*adds a thick solid border for right part of the image*/
+	border-bottom:thick solid ;/*adds a thick solid border for bottom part of the image*/
+	border-color:black;/*changes the colour of the border colour*/
+}.image5{
+	border-top:thick solid;/*adds a thick solid border for top part of the image*/
+	border-left:thick solid;/*adds a thick solid border for left part of the image*/
+	border-right:thick solid;/*adds a thick solid border for right part of the image*/
+	border-bottom:thick solid ;/*adds a thick solid border for bottom part of the image*/
+	border-color:black;/*changes the colour of the border colour*/
+
+}.image6{
+	border-left:thick solid;/*adds a thick solid border for left part of the image*/
+	border-right:thick solid;/*adds a thick solid border for right part of the image*/
+	border-top:thick solid ;/*adds a thick solid border for top part of the image*/
+	border-bottom:thick solid ;/*adds a thick solid border for bottom part of the image*/
+	border-color:black;/*changes the colour of the border colour*/
+
 }
 
-.tree2{
-	border-radius: 15%;
-	float:right;
-}
-.background{
-	background-image: url("background image.jpg");
-	margin:30px;
-	width:1550;
-	height:550px;
-	border-style:solid; 
-	
-}
-.texts{
-	color:white;
-	outline-color:red;
-}
-.allbackground{
-	background-image: url("background image2.jpg");
-	background-size:100%;
-	height:890px;
-	background-repeat:no-repeat;
-	
+
+.column{
+	display: flex;/*allows the entire column be side by side in a 3x2 box*/
+	scale:1.1;/*changes the size of the entire column*/
+	margin:auto;/*allows the entire column to be in the center of the page*/
+	width:70%;/*changes the width of the colum thats placed in the center of the pagee*/
+	margin-top: 120px;/*changes the height at which the column is placed from the top*/
+	text-align:center;/*aligns the Air, Land and Sea texts to the center of the box*/
 }
 h1{
-	color:white;
+	border-left:thick solid;/*adds a thick solid border for left part of the image*/
+	border-right:thick solid;/*adds a thick solid border for right part of the image*/
+	border-color:black;/*changes the colour of the border colour*/
+	/*border-bottom:thick solid;*/
+	background-color:white;/*changes the background colour of the text for Air, Land and Sea to white*/
+	margin:0;/*removes the gap between the bottom rows and texts (Air, Land and Sea)*/
+	opacity:.75;/*dims the colour and see through of the background colour for Air, Land and Sea texts*/
+}
+body{
+	background-image:url("Images/earth.jpg");/*allows you to add a specific image from the Images folder*/
+	background-repeat:no-repeat;/*allows the image to be repeated only once*/
+	background-position:center;/*changes the positioning of the image to the center of the website*/
+	background-size:cover;/*changes the size of the image to cover the entire page of the website*/ 
+
+}
+@media screen and (max-width: 480px) {
+		#content {
+		 width: auto; float: none;
+		 background-color: yellow;
+		}
+		h1{
+		 font-size: 50px;
+		}
+		#sidebar {
+		 display: none;
+		}
+		}
+@media screen and (max-width: 980px) {
+#pagewrap {
+ width: 90%;
+}
+#content {
+ width: 60%;
+ background-color: olive;
+}
+#sidebar {
+ width: 30%;
+ background-color: teal;
+}
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
 }
